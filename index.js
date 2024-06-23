@@ -16,3 +16,9 @@ function search_list() {
       }
     }
   }
+
+document.getElementById('searchbar').addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    search_list();
+  }
+});
