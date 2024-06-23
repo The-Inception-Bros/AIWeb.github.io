@@ -210,6 +210,7 @@ ul {
     flex: 1 1 1;
     height: 200px;
     min-width: 400px;
+    display:none;
 }
 
 .list-heading{
