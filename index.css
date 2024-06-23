@@ -139,6 +139,7 @@ ul {
 }
 
 
+
 .heading {
     font-size: 30px;
     font-family: 'Permanent Marker';
@@ -195,50 +196,27 @@ ul {
 
 .content {
     font-size: 1.2em;
+    padding: 10px;
     border-bottom: 1px solid var(--wt1);
     color: var(--wt2);
     animation: fadeIn 0.5s ease-in-out;
+    text-align: center;
     padding: 20px;
     background-color: var(--bg2);
     transition: background-color 0.3s;
     border-radius: 20px;
     transition: .3s;
     display: inline-block;
-    width: 30%; /* adjust the width to fit your needs */
+    width: 30%;
+    min-width: 400px; /* adjust the width to fit your needs */
     margin: 10px; /* add some margin to separate the divs */
     flex: 1 1 1;
-    height: 200px;
-    min-width: 400px;
+    min-height: 200px;
     display: none;
-    
 }
 
 .list-heading{
-    font-size: 30px;
-    margin-left: 50%;
-    font-family: 'Poppins';
-}
-
-.list-text{
-    margin-top: 10%;
-    font-family: 'Poppins';
-
-}
-
-.list-description{
-    font-family: 'Poppins';
-    font-size: 15px;
-}
- 
-.list-button{
-    width: 80px;
-    height: 40px;
-    margin-left: 70%;
-    color: white;
-    background-color: var(--bg2);
-    border: 1px solid white;
-    border-radius: 5px;
-    font-family: 'Poppins';
+    font-size: larger;
 }
 
 
@@ -258,4 +236,39 @@ ul {
     background: var(--bg2);
     padding: 10px;
     
+}
+
+.list-heading{
+    font-size: 30px;
+    margin-left: 50%;
+    font-family: 'Poppins';
+}
+
+.list-text{
+    margin-top: 10%;
+    font-family: 'Poppins';
+
+}
+
+.list-description{
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+
+.list-button{
+    width: 80px;
+    height: 40px;
+    margin-left: 70%;
+    background-color: var(--bg2);
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family: 'Poppins';
+    cursor: pointer;
+
+}
+.list-button a{
+    color: var(--wt2);
+}
+.icon{
+    padding-left: 10px;
 }
