@@ -1,47 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--IMPORTANT COMMENTS-->
-  <!--READ IT ALAN-->
-  <!--Listen Alan, I made the background color of main-content a different color so that i can identify the 
-    margins and paddings.-->
-  <!--Your mission is to make the heading just above the searchbar. I cant do that.-->
+<!--IMPORTANT COMMENTS-->
 
-  <!-- ok bro im on it got you ocvered-->
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Something</title>
-    <link rel="stylesheet" href="index.css" />
-    <link
-      rel="stylesheet"
-      data-purpose="Layout StyleSheet"
-      title="Web Awesome"
-      href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
-    />
-  </head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" data-purpose="Layout StyleSheet" title="Web Awesome"
+        href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+</head>
 
-  <body>
+<body>
     <!-- todo  awesome design-->
     <!-- todo  top navbar-->
     <!-- todo  footer-->
@@ -51,91 +26,177 @@
     <!-- todo  innovative and beautiful home page-->
     <!-- todo  do something crazy -->
     <div class="main-container">
-      <div class="top">
-        <div class="logo">
-          <a href="#"><span>WebAI</span></a>
-        </div>
-
-        <div class="nav-toggle">
-          <span></span>
-        </div>
-
-        <ul class="nav">
-          <li>
-            <a href="#contact"
-              ><i class="fa-regular fa-messages"></i> Contact</a
-            >
-          </li>
-          <li>
-            <a href="#projects"
-              ><i class="fa-light fa-rectangle-history-circle-user"></i>
-              Projects</a
-            >
-          </li>
-          <li>
-            <a href="#service"
-              ><i class="fa-regular fa-users-gear"></i> Services</a
-            >
-          </li>
-          <li>
-            <a href="#about"><i class="fa-regular fa-user"></i> About</a>
-          </li>
-          <li>
-            <a href="#home" class="active"
-              ><i class="fa-regular fa-house"></i> Home</a
-            >
-          </li>
-        </ul>
-      </div>
-      <!-- !main content start -->
-      <div class="main-content">
-        <section class="section home active">
-          <!-- !searchbar start -->
-
-          <p class="heading">Discover the power of AI</p>
-
-          <div class="searchbar">
-            <input
-              id="searchbar"
-              type="text"
-              name="search"
-              placeholder="Start Searching.."
-            />
-            <button
-              class="search searchbar"
-              id="search"
-              onclick="search_list()"
-            >
-              <i class="fas fa-search"></i>
-            </button>
-            <!-- !list of items start -->
-            <div id="list">
-              <div class="content">
-                <p class="list-heading">ChatGPT</p>
-                <p class="list-text">Free</p>
-                <p class="list-description">lorem ipsum dolor sit amet</p>
-                <button class="">Visit</button>
-              </div>
-
-              <div class="content">Cat</div>
-              <div class="content">Dog</div>
-              <div class="content">Elephant</div>
-              <div class="content">Fish</div>
-              <div class="content">Gorilla</div>
-              <div class="content">Monkey</div>
-              <div class="content">Turtle</div>
-              <div class="content">Whale</div>
-              <div class="content">Alligator</div>
-              <div class="content">Donkey</div>
-              <div class="content">Horse</div>
+        <div class="top">
+            <div class="logo">
+                <a href="#"><span>WebAI</span></a>
             </div>
-            <!-- !list of items end -->
-          </div>
-          <!-- !searchbar end -->
-        </section>
-      </div>
-      <!-- !main content end -->
+
+            <div class="nav-toggle">
+                <span></span>
+            </div>
+
+            <ul class="nav">
+                <li><a href="#contact"><i class="fa-regular fa-messages"></i> Contact</a></li>
+                <li><a href="#projects"><i class="fa-light fa-rectangle-history-circle-user"></i> Projects</a></li>
+                <li><a href="#service"><i class="fa-regular fa-users-gear"></i> Services</a></li>
+                <li><a href="#about"><i class="fa-regular fa-user"></i> About</a></li>
+                <li><a href="#home" class="active"><i class="fa-regular fa-house"></i> Home</a></li>
+
+            </ul>
+        </div>
+        <!-- !main content start -->
+        <div class="main-content">
+            <section class="section home active" id="home">
+                <!-- !searchbar start -->
+
+                <p class="heading">Discover the power of AI</p>
+
+                <div class="searchbar">
+                    <input id="searchbar" type="text" name="search" placeholder="Start Searching..">
+                    <button class="search searchbar" id="search" onclick="search_list()"> <i
+                            class="fas fa-search"></i></button>
+                    <!-- !list of items start -->
+                    <div id='list'>
+
+                        <div class="content">
+                            <p class="list-heading">ChatGPT</p>
+                            <p class="list-text">Free</p>
+                            <p class="list-description">lorem ipsum dolor sit amet</p>
+                            <button class="list-button"><a href="#">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></a></button>
+                          </div>
+
+                          <div class="content">
+                            <p class="list-heading">ChatGPT</p>
+                            <p class="list-text">Free</p>
+                            <p class="list-description">lorem ipsum dolor sit amet</p>
+                            <button class="list-button"><a href="#">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></a></button>
+                          </div>
+
+                          <div class="content">
+                            <p class="list-heading">ChatGPT</p>
+                            <p class="list-text">Free</p>
+                            <p class="list-description">lorem ipsum dolor sit amet</p>
+                            <button class="list-button"><a href="#">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></a></button>
+                          </div>
+
+                          <div class="content">
+                            <p class="list-heading">ChatGPT</p>
+                            <p class="list-text">Free</p>
+                            <p class="list-description">lorem ipsum dolor sit amet</p>
+                            <button class="list-button"><a href="#">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></a></button>
+                          </div>
+
+                          <div class="content">
+                            <p class="list-heading">ChatGPT</p>
+                            <p class="list-text">Free</p>
+                            <p class="list-description">lorem ipsum dolor sit amet</p>
+                            <button class="list-button"><a href="#">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></a></button>
+                          </div>
+
+                          <div class="content">
+                            <p class="list-heading">ChatGPT</p>
+                            <p class="list-text">Free</p>
+                            <p class="list-description">lorem ipsum dolor sit amet</p>
+                            <button class="list-button"><a href="#">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></a></button>
+                          </div>
+
+                          <div class="content">
+                            <p class="list-heading">ChatGPT</p>
+                            <p class="list-text">Free</p>
+                            <p class="list-description">lorem ipsum dolor sit amet</p>
+                            <button class="list-button"><a href="#">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></a></button>
+                          </div>
+
+                          <div class="content">
+                            <p class="list-heading">ChatGPT</p>
+                            <p class="list-text">Free</p>
+                            <p class="list-description">lorem ipsum dolor sit amet</p>
+                            <button class="list-button"><a href="#">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></a></button>
+                          </div>
+
+                          <div class="content">
+                            <p class="list-heading">ChatGPT</p>
+                            <p class="list-text">Free</p>
+                            <p class="list-description">lorem ipsum dolor sit amet</p>
+                            <button class="list-button"><a href="#">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></a></button>
+                          </div>
+
+                          <div class="content">
+                            <p class="list-heading">ChatGPT</p>
+                            <p class="list-text">Free</p>
+                            <p class="list-description">lorem ipsum dolor sit amet</p>
+                            <button class="list-button"><a href="#">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></a></button>
+                          </div>
+
+                          <div class="content">
+                            <p class="list-heading">ChatGPT</p>
+                            <p class="list-text">Free</p>
+                            <p class="list-description">lorem ipsum dolor sit amet</p>
+                            <button class="list-button"><a href="#">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></a></button>
+                          </div>
+
+                          <div class="content">
+                            <p class="list-heading">ChatGPT</p>
+                            <p class="list-text">Free</p>
+                            <p class="list-description">lorem ipsum dolor sit amet</p>
+                            <button class="list-button"><a href="#">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></a></button>
+                          </div>
+
+                        
+                    </div>
+                    <!-- !list of items end -->
+                </div>
+                <!-- !searchbar end -->
+            </section>
+
+            <!-- <section class="contactus" id="contactus">
+                <form action="https://formspree.io/f/xwkgbpdj" method="post" onsubmit="">
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name :" name="name"
+                                            required="required">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="E-mail :" name="email"
+                                            required="required">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="subject:" name="subject"
+                                            required="required">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <textarea name="message" class="form-control" id="" placeholder="Message :"
+                                            required="required"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <button type="submit" value="reset" class="btn">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section> -->
+
+        </div>
+        <!-- !main content end -->
     </div>
-  </body>
-  <script src="index.js"></script>
+</body>
+<script src="index.js"></script>
+
 </html>
