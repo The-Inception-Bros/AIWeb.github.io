@@ -195,13 +195,10 @@ ul {
 
 
 .content {
-    display: none;
     font-size: 1.2em;
-    padding: 10px;
     border-bottom: 1px solid var(--wt1);
     color: var(--wt2);
     animation: fadeIn 0.5s ease-in-out;
-    text-align: center;
     padding: 20px;
     background-color: var(--bg2);
     transition: background-color 0.3s;
@@ -212,15 +209,37 @@ ul {
     margin: 10px; /* add some margin to separate the divs */
     flex: 1 1 1;
     height: 200px;
+    min-width: 400px;
 }
 
 .list-heading{
-    font-size: larger;
+    font-size: 30px;
+    margin-left: 50%;
+    font-family: 'Poppins';
 }
 
-.content:last-child {
-    border-bottom: none;
+.list-text{
+    margin-top: 10%;
+    font-family: 'Poppins';
+
 }
+
+.list-description{
+    font-family: 'Poppins';
+    font-size: 15px;
+}
+
+.list-button{
+    width: 80px;
+    height: 40px;
+    margin-left: 70%;
+    color: white;
+    background-color: var(--bg2);
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family: 'Poppins';
+}
+
 
 @keyframes fadeIn {
     from {
