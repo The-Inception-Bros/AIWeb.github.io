@@ -209,7 +209,8 @@ ul {
     flex: 1 1 1;
     height: 200px;
     min-width: 400px;
-    display:none;
+    display: none;
+    
 }
 
 .list-heading{
@@ -228,7 +229,7 @@ ul {
     font-family: 'Poppins';
     font-size: 15px;
 }
-
+ 
 .list-button{
     width: 80px;
     height: 40px;
