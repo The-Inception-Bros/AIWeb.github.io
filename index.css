@@ -254,15 +254,21 @@ ul {
     cursor: pointer;
     font-size: 15px;
     transition: .4s;
+    color: var(--mc);
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
 }
 
 .list-button a {
-    color: var(--wt2);
+    color: var(--mc);
 }
 
 .list-button:hover {
-    background-color: #e8b923;
+    background-color: var(--mc);
+    color: black;
     border: none;
+    transform: scale(1.15);
+    border: 1px solid black;
 }
 
 
