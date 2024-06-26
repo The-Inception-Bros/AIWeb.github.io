@@ -329,6 +329,10 @@ ul {
 
 .contact .contact-form .form-item textarea.form-control {
     height: 200px;
+    min-height: 200px;
+    max-height: 300px;
+    max-width: 1800px;
+    min-width: 50%;
 }
 
 .contact .contact-form .btn {
