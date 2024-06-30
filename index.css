@@ -24,6 +24,7 @@ body {
     line-height: 1.5;
     font-size: 16px;
     background-color: var(--bg1);
+    overflow-x: hidden;
 }
 
 * {
@@ -288,13 +289,13 @@ ul {
         transform: translateY(0);
     }
 }
-.contact{
-    margin: 75px;
-}
+
 
 .contact .contact-form {
     flex: 0 0 100%;
-    max-width: 100%;
+    max-width: 92%;
+    margin: 75px;
+    margin-top: 20px;
 }
 
 .contact .contact-form .col-6 {
@@ -367,4 +368,19 @@ ul {
     margin-left: -15px;
     margin-right: -15px;
     position: relative;
+}
+
+.section{
+    display: none;
+}
+.section.active{
+    display: contents;
+}
+
+.main-text{
+    color: var(--mc);
+    font-weight: 700;
+    margin-left: 70px;
+    margin-top: 30px;
+    font-size: 30px;
 }
