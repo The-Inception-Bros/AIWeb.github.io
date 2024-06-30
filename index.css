@@ -9,6 +9,7 @@
     --wt1: #ffffff;
     --wt2: #e9e9e9;
     --mc: #e8b923;
+    --tag: #2657f8;
 }
 
 body.light {
@@ -18,6 +19,7 @@ body.light {
     --wt1: #302e4d;
     --wt2: #504e70;
     --mc: #e8b923;
+    
 }
 
 body {
@@ -170,6 +172,7 @@ ul {
     box-sizing: border-box;
     height: 50px;
     border: none;
+    font-family: 'Poppins';
 }
 
 #search {
@@ -183,7 +186,7 @@ ul {
     top: -260px;
     left: 370px;
     cursor: pointer;
-    margin-right: -80px;
+    margin-right: 20px;
 }
 
 #list {
@@ -215,7 +218,6 @@ ul {
     /* add some margin to separate the divs */
     flex: 1 1 1;
     min-height: 300px;
-    display: none;
 }
 
 
@@ -226,8 +228,8 @@ ul {
 }
 
 .list-heading {
-    font-size: 30px;
-    margin-left: 50%;
+    font-size: 25px;
+    margin-left: 40%;
     font-family: 'Poppins';
 }
 
@@ -241,6 +243,12 @@ ul {
     font-family: 'Poppins';
     font-size: 20px;
     margin-top: 5%;
+}
+
+.list-tags{
+    font-family: 'Poppins';
+    margin-top: 20px;
+    color: var(--tag);
 }
 
 .list-button {
@@ -384,3 +392,4 @@ ul {
     margin-top: 30px;
     font-size: 30px;
 }
+
