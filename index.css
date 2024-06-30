@@ -9,17 +9,15 @@
     --wt1: #ffffff;
     --wt2: #e9e9e9;
     --mc: #e8b923;
-    --tag: #2657f8;
 }
 
 body.light {
-    --bg1: #f2f2fc;
+    --bg1: #e8dfec;
     --bg2: #fdf9ff;
-    --bg3: #e8dfec;
+    --bg3: #f2f2fc;
     --wt1: #302e4d;
     --wt2: #504e70;
-    --mc: #e8b923;
-    
+    --mc: #eab711;
 }
 
 body {
@@ -172,7 +170,6 @@ ul {
     box-sizing: border-box;
     height: 50px;
     border: none;
-    font-family: 'Poppins';
 }
 
 #search {
@@ -186,7 +183,7 @@ ul {
     top: -260px;
     left: 370px;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: -80px;
 }
 
 #list {
@@ -218,18 +215,19 @@ ul {
     /* add some margin to separate the divs */
     flex: 1 1 1;
     min-height: 300px;
+    display: none;
 }
 
 
 .item {
-    background: var(--bg2);
+    background: var(--bg1);
     padding: 10px;
 
 }
 
 .list-heading {
-    font-size: 25px;
-    margin-left: 40%;
+    font-size: 30px;
+    margin-left: 50%;
     font-family: 'Poppins';
 }
 
@@ -243,12 +241,6 @@ ul {
     font-family: 'Poppins';
     font-size: 20px;
     margin-top: 5%;
-}
-
-.list-tags{
-    font-family: 'Poppins';
-    margin-top: 20px;
-    color: var(--tag);
 }
 
 .list-button {
@@ -266,6 +258,7 @@ ul {
     color: var(--mc);
     font-weight: 600;
     transition: all 0.5s ease-in-out;
+    border: 1px solid var(--wt1);
 }
 
 .list-button a {
@@ -349,7 +342,7 @@ ul {
     padding: 0 50px;
 }
 
-.form-group{
+.form-group {
     padding: 10px;
 }
 
@@ -366,6 +359,7 @@ ul {
     transition: all 0.3s ease;
     margin-left: 15px;
 }
+
 .btn:hover {
     transform: scale(1.05);
 }
@@ -378,14 +372,15 @@ ul {
     position: relative;
 }
 
-.section{
+.section {
     display: none;
 }
-.section.active{
+
+.section.active {
     display: contents;
 }
 
-.main-text{
+.main-text {
     color: var(--mc);
     font-weight: 700;
     margin-left: 70px;
@@ -393,3 +388,11 @@ ul {
     font-size: 30px;
 }
 
+.mode{
+    color: var(--wt2);
+    float: right;
+    font-size: 25px;
+    padding-left: 10px;
+    cursor: pointer;
+    margin-top: -3px;
+}
