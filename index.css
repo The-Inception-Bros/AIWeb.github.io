@@ -44,11 +44,12 @@ ul {
     list-style: none;
 }
 
+
+/*We dont need background color here in the Navbar*/
 .top {
     background: transparent;
     padding: 45px;
     padding-bottom: 50px;
-    background-color: var(--bg2);
 }
 
 .nav {
@@ -226,8 +227,8 @@ ul {
 }
 
 .list-heading {
-    font-size: 30px;
-    margin-left: 50%;
+    font-size: 25px;
+    margin-left: 40%;
     font-family: 'Poppins';
 }
 
@@ -259,6 +260,13 @@ ul {
     font-weight: 600;
     transition: all 0.5s ease-in-out;
     border: 1px solid var(--wt1);
+}
+
+.list-tags{
+    font-size: 20px;
+    color: #5683ff;
+    margin-top: 10px;
+    font-family: 'Poppins';
 }
 
 .list-button a {
@@ -380,12 +388,40 @@ ul {
     display: contents;
 }
 
+/*About us page*/
+
 .main-text {
     color: var(--mc);
     font-weight: 700;
-    margin-left: 70px;
-    margin-top: 30px;
-    font-size: 30px;
+    margin-left: 40%;
+    margin-top: 2%;
+    font-size: 50px;
+    font-family: 'Poppins';
+}
+
+.question-answer{
+    background-color: transparent;
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.main-question{
+    color: var(--mc);
+    font-weight: 500;
+    margin-top: 7%;
+    font-size: 50px;
+    font-family: 'Poppins';
+}
+
+.main-answer{
+    color: var(--wt1);
+    font-weight: 400;
+    margin-top: 1%;
+    font-size: 22px;
+    font-family: 'Poppins';
 }
 
 .mode {
