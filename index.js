@@ -1,3 +1,4 @@
+
 let displayedCount = 9;
 
 function search_list() {
@@ -119,3 +120,53 @@ window.addEventListener("load", () => {
     }
 })
 
+
+//*! animation text
+
+const textArray = ["Hello World!", "Hello World!", "Hello World!"];
+const typingSpeed = 100;
+const deletingSpeed = 50;
+const pauseBetween = 2000;
+
+let textIndex = 0;
+let charIndex = 0;
+let currentText = '';
+let isDeleting = false;
+
+const typewriterElement = document.getElementById('typewriter');
+
+function type() {
+  if (isDeleting) {
+    if (charIndex > 0) {
+      currentText = textArray[textIndex].substring(0, charIndex - 1);
+      charIndex--;
+      typewriterElement.innerHTML = currentText;
+      setTimeout(type, deletingSpeed);
+    } else {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % textArray.length;
+      changeColor();
+      setTimeout(type, typingSpeed);
+    }
+  } else {
+    if (charIndex < textArray[textIndex].length) {
+      currentText = textArray[textIndex].substring(0, charIndex + 1);
+      charIndex++;
+      typewriterElement.innerHTML = currentText;
+      setTimeout(type, typingSpeed);
+    } else {
+      setTimeout(() => {
+        isDeleting = true;
+        setTimeout(type, deletingSpeed);
+      }, pauseBetween);
+    }
+  }
+}
+
+function changeColor() {
+  const colors = ["#FF5733", "#33FF57", "#3357FF", "#F3FF33", "#FF33FB"];
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  typewriterElement.style.color = randomColor;
+}
+
+type();
