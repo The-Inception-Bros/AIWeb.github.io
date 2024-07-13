@@ -61,3 +61,7 @@ AI. Image Enlarger	        - Art, Music, & Graphics       - 	Enlarges images whi
 Semantris	                - Work & Business              - 	Analyzes and improves the clarity and persuasiveness of written content.
 Pfpmaker	                - Fun AI websites              - 	Generates profile pictures (PFPs) for social media with various styles.
 Thing Translator	        - Productivity & AI Assistants -	Translates languages spoken through microphones or uploaded recordings.	
+geogebra
+meta ai
+giphy
+tenor
