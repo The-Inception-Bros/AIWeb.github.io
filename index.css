@@ -504,16 +504,17 @@ hr {
 #typewriter {
     margin-right: 2px;
     min-height: 90px;
-    max-width: 600px;
+    max-width: 1000px;
+    min-width: 0px;
     border-right: 0.1em solid;
     margin-left: 30%;
-    display: flex;
+    display: inline-block;
     white-space: nowrap;
     overflow: hidden;
     animation: caret 0.5s steps(1) infinite;
     margin-top: 100px;
     padding-top: 0;
-    padding-right: 0;
+    padding-right: 20px;
   }
 
   
