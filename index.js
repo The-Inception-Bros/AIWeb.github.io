@@ -123,7 +123,7 @@ window.addEventListener("load", () => {
 
 //*! animation text
 
-const textArray = ["Hello World!", "Hello World!", "Hello World!"];
+const textArray = ["Discover The Power OF AI", "Discover The Power OF AI"];
 const typingSpeed = 100;
 const deletingSpeed = 50;
 const pauseBetween = 2000;
@@ -164,7 +164,7 @@ function type() {
 }
 
 function changeColor() {
-  const colors = ["#FF5733", "#33FF57", "#3357FF", "#F3FF33", "#FF33FB"];
+  const colors = ["#eab711", "#ffffff", "#eab711", "#ffffff", "#eab711"];
   const randomColor = colors[Math.floor(Math.random() * colors.length)];
   typewriterElement.style.color = randomColor;
 }
