@@ -504,10 +504,9 @@ hr {
 #typewriter {
     margin-right: 2px;
     min-height: 90px;
-    max-width: 1000px;
     min-width: 0px;
     border-right: 0.1em solid;
-    margin-left: 30%;
+    margin-left: auto;
     display: inline-block;
     white-space: nowrap;
     overflow: hidden;
@@ -515,12 +514,39 @@ hr {
     margin-top: 100px;
     padding-top: 0;
     padding-right: 20px;
-  }
+    padding-left: 29%;
+}
 
-  
-  @keyframes caret {
+
+@keyframes caret {
     50% {
-      border-color: transparent;
+        border-color: transparent;
     }
-  }
-  
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .top {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .nav-buttons {
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-text {
+        font-size: 1.5rem;
+    }
+
+    .nav-buttons {
+        font-size: 0.8rem;
+    }
+}
