@@ -1,552 +1,473 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
-:root {
-    --bg1: #151515;
-    --bg2: #222222;
-    --bg3: #393939;
-    --wt1: #ffffff;
-    --wt2: #e9e9e9;
-    --mc: #e8b923;
-    --sc: #5683ff;
-}
-
-body.light {
-    --bg1: #e8dfec;
-    --bg2: #fdf9ff;
-    --bg3: #f2f2fc;
-    --wt1: #302e4d;
-    --wt2: #504e70;
-    --mc: #eab711;
-    --sc: #5683ff;
-}
-
-body {
-    line-height: 1.5;
-    font-size: 16px;
-    background-color: var(--bg1);
-    overflow-x: hidden;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
-
-::before,
-::after {
-    box-sizing: border-box;
-}
-
-ul {
-    list-style: none;
-}
-
-.top {
-    background: transparent;
-    padding: 45px;
-    padding-bottom: 50px;
-}
-
-.nav {
-    margin-top: -60px;
-    margin-bottom: 30px;
-}
-
-.nav li {
-    display: inline;
-    float: right;
-
-}
-
-.nav li a {
-    padding: 20px;
-    font-size: larger;
-    color: var(--wt2);
-    font-family: 'Poppins';
-}
-
-/* !nav toggle */
-
-.nav-toggle {
-    height: 40px;
-    width: 45px;
-    border: 1px solid var(--bgb50);
-    cursor: pointer;
-    position: fixed;
-    left: 300px;
-    top: 20px;
-    border-radius: 5px;
-    background: var(--bgb100);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.nav-toggle span {
-    height: 2px;
-    width: 18px;
-    background: red;
-    display: inline-block;
-    position: relative;
-}
-
-.nav-toggle.open span {
-    background-color: transparent;
-}
-
-.nav-toggle span::before {
-    content: '';
-    height: 2px;
-    width: 18px;
-    background: red;
-    position: absolute;
-    top: -6px;
-    left: 0;
-}
-
-.nav-toggle.open span::before {
-    transform: rotate(45deg);
-    top: 0;
-}
-
-.nav-toggle span::after {
-    content: '';
-    height: 2px;
-    width: 18px;
-    background: red;
-    position: absolute;
-    top: 6px;
-    left: 0;
-}
-
-.nav-toggle.open span::after {
-    transform: rotate(-45deg);
-    top: 0;
-}
-
-/* !navtoggle end */
-
-.logo a {
-    color: var(--wt2);
-    font-size: 50px;
-    font-family: 'Merienda';
-}
-
-.main-content {
-    background-color: var(--bg1);
-}
-
-
-
-.heading {
-    font-family: 'Permanent Marker';
-    display: flex;
-    justify-content: center;
-    padding-top: 100px;
-    font-size: 60px;
-    color: var(--mc);
-}
-
-.searchbar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-
-}
-
-
-#searchbar {
-    margin: 200px;
-    margin-top: 75px;
-    padding: 10px;
-    border-radius: 30px;
-    width: 50%;
-    box-sizing: border-box;
-    height: 50px;
-    border: none;
-}
-
-#search {
-    margin: 10px;
-    padding: 20px;
-    height: 50px;
-    border-radius: 50px;
-    box-sizing: border-box;
-    border: none;
-    position: relative;
-    top: -260px;
-    left: 370px;
-    cursor: pointer;
-    margin-right: -80px;
-}
-
-#list {
-    list-style: none;
-    margin-top: -200px;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-.content {
-    font-size: 1.2em;
-    padding: 10px;
-    border-bottom: 1px solid var(--wt1);
-    color: var(--wt2);
-    animation: fadeIn 0.5s ease-in-out;
-    padding: 20px;
-    background-color: var(--bg2);
-    transition: background-color 0.3s;
-    border-radius: 20px;
-    transition: .3s;
-    display: inline-block;
-    width: 30%;
-    min-width: 400px;
-    /* adjust the width to fit your needs */
-    margin: 10px;
-    /* add some margin to separate the divs */
-    flex: 1 1 1;
-    min-height: 300px;
-    display: none;
-}
-
-
-.item {
-    background: var(--bg1);
-    padding: 10px;
-
-}
-
-.list-heading {
-    font-size: 25px;
-    margin-left: 40%;
-    font-family: 'Poppins';
-}
-
-.list-text {
-    margin-top: 10%;
-    font-family: 'Poppins';
-
-}
-
-.list-description {
-    font-family: 'Poppins';
-    font-size: 20px;
-    margin-top: 5%;
-}
-
-.list-button {
-    width: 100px;
-    height: 60px;
-    margin-left: 70%;
-    margin-top: 15%;
-    background-color: var(--bg2);
-    border: 1px solid white;
-    border-radius: 10px;
-    font-family: 'Poppins';
-    cursor: pointer;
-    font-size: 15px;
-    transition: .4s;
-    color: var(--mc);
-    font-weight: 600;
-    transition: all 0.5s ease-in-out;
-    border: 1px solid var(--wt1);
-}
-
-.list-tags {
-    margin-top: 10px;
-    padding-top: 10px;
-}
-
-.categories {
-    border: 3px solid var(--sc);
-    border-radius: 25px;
-    padding: 7px;
-    margin: 7px;
-    margin-left: 0;
-    margin-right: 10px;
-    display: inline;
-    font-size: 20px;
-    color: var(--sc);
-}
-
-.list-button a {
-    color: var(--mc);
-}
-
-.list-button:hover {
-    background-color: var(--mc);
-    color: black;
-    border: none;
-    transform: scale(1.15);
-    border: 1px solid black;
-}
-
-
-.icon {
-    padding-left: 10px;
-}
-
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-.contact .contact-form {
-    flex: 0 0 100%;
-    max-width: 92%;
-    margin: 75px;
-    margin-top: 20px;
-}
-
-.contact .contact-form .col-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.contact .contact-form .col-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-.contact .contact-form .form-item {
-    margin-bottom: 30px;
-}
-
-.contact .contact-form .form-item .form-control {
-    width: 100%;
-    height: 50px;
-    border-radius: 25px;
-    background: var(--bg2);
-    border: 1px solid var(--bg3);
-    padding: 10px 25px;
-    font-size: 16px;
-    color: var(--wt2);
-    transition: all 0.3s ease;
-}
-
-.contact .contact-form .form-item .form-control:focus {
-    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
-}
-
-.contact .contact-form .form-item textarea.form-control {
-    height: 200px;
-    min-height: 200px;
-    max-height: 300px;
-    max-width: 1800px;
-    min-width: 50%;
-}
-
-.contact .contact-form .btn {
-    height: 50px;
-    padding: 0 50px;
-}
-
-.form-group {
-    padding: 10px;
-}
-
-.btn {
-    font-size: 16px;
-    font-weight: 600;
-    padding: 12px 35px;
-    color: black;
-    border-radius: 40px;
-    display: inline-block;
-    white-space: nowrap;
-    border: none;
-    background: var(--mc);
-    transition: all 0.3s ease;
-    margin-left: 15px;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
-    position: relative;
-}
-
-.section {
-    display: none;
-}
-
-.section.active {
-    display: contents;
-}
-
-/*About us page*/
-
-.main-text {
-    color: var(--mc);
-    font-weight: 700;
-    margin-left: 40%;
-    margin-top: 2%;
-    font-size: 50px;
-    font-family: 'Poppins';
-}
-
-.question-answer {
-    background-color: transparent;
-    margin-top: 3%;
-    margin-left: 5%;
-    width: 100%;
-    height: 100%;
-
-}
-
-.main-question {
-    color: var(--mc);
-    font-weight: 500;
-    margin-top: 7%;
-    font-size: 50px;
-    font-family: 'Poppins';
-}
-
-.main-answer {
-    color: var(--wt1);
-    font-weight: 400;
-    margin-top: 1%;
-    font-size: 22px;
-    font-family: 'Poppins';
-}
-
-.mode {
-    color: var(--wt2);
-    float: right;
-    font-size: 25px;
-    padding-left: 10px;
-    cursor: pointer;
-    margin-top: -3px;
-}
-
-
-footer {
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-    margin-bottom: 0;
-    margin-top: 375px;
-}
-
-hr {
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 20px;
-    opacity: 0.3;
-    height: 1.5px;
-}
-
-.footer-info {
-    text-align: center;
-    position: relative;
-    padding: 20px;
-}
-
-.footer-info a {
-    border: 1px solid var(--wt1);
-    border-radius: 50%;
-    padding: 10px;
-    margin: 5px;
-    color: var(--wt1);
-}
-
-.footer-info a:hover {
-    transform: scale(2.05);
-}
-
-.copyright {
-    margin: 0px;
-    padding: 20px;
-    color: var(--wt1);
-    text-align: center;
-}
-
-#no2 {
-    width: 20%;
-    margin-left: 40%;
-    margin-top: 15px;
-    margin-bottom: 0;
-    opacity: 0.1;
-    height: 0.5px;
-}
-
-#special {
-    text-align: center;
-    margin-left: 7%;
-}
-
-/* todo make a text animation */
-
-#typewriter {
-    margin-right: 2px;
-    min-height: 90px;
-    min-width: 0px;
-    border-right: 0.1em solid;
-    margin-left: auto;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: caret 0.5s steps(1) infinite;
-    margin-top: 100px;
-    padding-top: 0;
-    padding-right: 20px;
-    padding-left: 29%;
-}
-
-
-@keyframes caret {
-    50% {
-        border-color: transparent;
-    }
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .top {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav {
-        margin-top: 10px;
-        justify-content: center;
-    }
-
-    .nav-buttons {
-        margin: 0 5px;
-    }
-}
-
-@media (max-width: 576px) {
-    .main-text {
-        font-size: 1.5rem;
-    }
-
-    .nav-buttons {
-        font-size: 0.8rem;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<!--CHANGES MADE BY US-->
+
+<!--I added the tags in the containers   -abel-->
+<!--I also did some changes in the about us page  -abel -->
+<!-- i added a lot of changes to categories   -alan-->
+<!-- by the way do it like this -->
+
+
+
+
+<!-- by the way have you noticed that the to do s are reducing -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIWeb</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="/css/app-wa-d53d10572a0e0d37cb8d614a3f177a0c.css?vsn=d">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-thin.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-solid.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-regular.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css">
+</head>
+
+<body>
+  <!-- by the way have you noticed that the to do's are reducing -->
+  <!-- todo  awesome design-->
+  <!-- todo  animation-->
+  <!-- todo  completely responsive-->
+  <!-- todo  innovative and beautiful home page-->
+  <!-- todo  do something crazy -->
+  <div class="main-container">
+    <div class="top">
+      <div class="logo">
+        <a href="#home" class="nav-buttons active"><span>AIWeb</span></a>
+      </div>
+
+      <div class="nav-toggle">
+        <span></span>
+      </div>
+
+      <ul class="nav">
+        <li class="mode" onclick="ModeSelector()"><i class="fas fa-spin"></i></li>
+        <li><a class="nav-buttons" href="#contact"><i class="fa-regular fa-messages"></i> Contact</a></li>
+        <li><a class="nav-buttons" href="#about"><i class="fa-regular fa-user"></i> About</a></li>
+        <li><a class="nav-buttons" href="#home" class="active"><i class="fa-regular fa-house"></i> Home</a></li>
+
+      </ul>
+    </div>
+    <!-- !main content start -->
+    <div class="main-content">
+      <section class="section home active" id="home">
+        <!-- !searchbar start -->
+
+
+        <!--We need to do this as a typing animation after everything-->
+        <!-- ok thats a good idea -->
+        <div class="double-check">
+          <div id="typewriter" class="heading typing"></div>
+        </div>
+
+        <div class="searchbar">
+          <input id="searchbar" type="text" name="search" placeholder="Start Searching..">
+          <button class="search searchbar" id="search" onclick="search_list()"> <i class="fas fa-search"></i></button>
+          <!-- !list of items start -->
+          <div id='list'>
+            <div class="content">
+              <p class="list-heading">ChatGPT</p>
+              <p class="list-text">Free</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://openai.com/chatgpt/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Axiom</p>
+              <p class="list-text">Freemium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://axiom.co/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <!--Increase the width in this box-->
+            <!-- why -->
+            <div class="content">
+              <p class="list-heading" id="special">WoframAlpha</p>
+              <p class="list-text">Freemium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://www.wolframalpha.com/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">TinyWow</p>
+              <p class="list-text">Free</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://tinywow.com/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Jotform</p>
+              <p class="list-text">Freemium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <div class="list-tags">
+                <div class="categories">#chatbot</div>
+                <div class="categories">#useful</div>
+                <div class="categories">#fun</div>
+              </div>
+              <a href="https://www.jotform.com/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Ossa.ai</p>
+              <p class="list-text">Premium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://ossa.ai/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Coursera</p>
+              <p class="list-text">Premium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://www.coursera.org/en-IN"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Syllaby</p>
+              <p class="list-text">Premium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a
+                href="https://syllaby.io/?via=victor33&gad_source=1&gclid=CjwKCAjw1emzBhB8EiwAHwZZxTu2M8RLRmf9kncoDbijMeIQqhdv9b8tRWAf4-sw3ISa0-1I-b8PgxoCeDMQAvD_BwE"><button
+                  class="list-button">Visit<i class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading" id="special">Watermarker Remover</p>
+              <p class="list-text">Free</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://www.watermarkremover.io/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">opus.pro</p>
+              <p class="list-text">Freemium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://www.opus.pro/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Krea.ai</p>
+              <p class="list-text">Freemium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://www.krea.ai/home"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Bing Art</p>
+              <p class="list-text">Free</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://www.bing.com/images/create"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Gamma</p>
+              <p class="list-text">Freemium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://gamma.app/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading" id="special">Superhuman</p>
+              <p class="list-text">Premium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://superhuman.com/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">remove.bg</p>
+              <p class="list-text">Freemium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://www.remove.bg/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Otter.ai</p>
+              <p class="list-text">Freemium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://otter.ai/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading" id="special">elevenlabs.io</p>
+              <p class="list-text">Freemium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://elevenlabs.io/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Lumen5</p>
+              <p class="list-text">Freemium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://lumen5.com/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Rytr</p>
+              <p class="list-text">Freemium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://rytr.me/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Kaiber.ai</p>
+              <p class="list-text">Premium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://kaiber.ai/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Consensus</p>
+              <p class="list-text">Freemium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://consensus.app/"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading" id="special">Video Translator</p>
+              <p class="list-text">Free</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="#"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading" id="special">Google Gemini</p>
+              <p class="list-text">Free</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://gemini.google.com/app?hl=en"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+
+            <div class="content">
+              <p class="list-heading">Midjourney</p>
+              <p class="list-text">Premium</p>
+              <p class="list-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam?</p>
+              <p class="list-tags">
+              <div class="categories">#chatbot</div>
+              <div class="categories">#useful</div>
+              <div class="categories">#fun</div>
+              </p>
+              <a href="https://www.midjourney.com/home"><button class="list-button">Visit<i
+                    class="fa-regular fa-arrow-up-right-from-square icon"></i></button></a>
+            </div>
+          </div>
+          <button class="btn" id="seeMore">See More</button>
+          <!-- !list of items end -->
+        </div>
+        <!-- !searchbar end -->
+      </section>
+
+      <section class="section about" id="about">
+        <p class="main-text">FAQ Section</p>
+        <hr>
+        <div class="question-answer">
+          <p class="main-question">What is AIWeb?</p>
+          <p class="main-answer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, nemo magnam? consectetur adipisicing elit.
+            Eveniet, quasi quam neque ad illum dignissimos. ahsdjdahjdjashdjhsbdhsbdjshbd
+          </p>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="main-text">
+          <h1>Contact Us</h1>
+        </div>
+        <!-- <form action="https://formspree.io/f/movaapzd" method="post" id="Form"> -->
+          <form action="https://formcarry.com/s/QV31ZihZu6t" method="post" id="Form">
+          <div class="row">
+            <div class="contact-form padd-15">
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Name :" name="name" required="required">
+                  </div>
+                </div>
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="email" class="form-control" placeholder="E-mail :" name="email" required="required">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="subject:" name="subject" required="required">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea name="message" class="form-control" id="" placeholder="Message :"
+                      required="required"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <button type="submit" value="submit" class="btn">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </section>
+
+    </div>
+    <!-- !main content end -->
+  </div>
+
+  <footer>
+    <hr>
+    <div class="footer-info">
+      <a href="https://www.instagram.com//alan__betty"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@alanbetty"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://x.com/AlanPBetty"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://github.com/Alan-Betty/"><i class="fa-brands fa-github"></i></a>
+    </div>
+    <hr id="no2">
+    <div class="copyright">
+      <p>&copy; 2024 AIWeb. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+
+</body>
+
+<script src="index.js"></script>
+
+
+</html>
