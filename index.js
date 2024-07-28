@@ -120,6 +120,15 @@ window.addEventListener("load", () => {
     }
 })
 
+function showSidebar(){
+  const sidebar = document.querySelector('.side-nav')
+  sidebar.style.display = 'flex'
+}
+
+function removeSidebar(){
+  const sidebar = document.querySelector('.side-nav')
+  sidebar.style.display = 'none'
+}
 
 //*! animation text
 
@@ -170,3 +179,5 @@ function changeColor() {
 }
 
 type();
+
+
