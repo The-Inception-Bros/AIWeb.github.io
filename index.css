@@ -52,6 +52,31 @@ ul {
     padding-bottom: 50px;
 }
 
+.side-nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.185);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: none;
+    
+}
+
+.side-nav li a{
+    padding: 20px;
+    margin-top: 20px;
+    font-size: larger;
+    color: var(--wt1);
+    font-family: 'Poppins';
+    
+}
+
 .nav {
     margin-top: -60px;
     margin-bottom: 30px;
@@ -148,6 +173,7 @@ ul {
     font-family: 'Permanent Marker';
     display: flex;
     justify-content: center;
+    margin-left: -100px;
     padding-top: 100px;
     font-size: 60px;
     color: var(--mc);
@@ -182,7 +208,7 @@ ul {
     border: none;
     position: relative;
     top: -260px;
-    left: 370px;
+    margin-left: 650px;
     cursor: pointer;
     margin-right: -80px;
 }
@@ -514,7 +540,7 @@ hr {
     margin-top: 100px;
     padding-top: 0;
     padding-right: 20px;
-    padding-left: 29%;
+    padding-left: 23%;
 }
 
 
@@ -524,29 +550,53 @@ hr {
     }
 }
 
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .top {
-        flex-direction: column;
-        align-items: flex-start;
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1440px)
+{
+    #search{
+        margin-left: 700px;
+    }
+    
+}
+
+
+@media screen and (max-width: 1024px)
+{
+    .heading{
+        font-size: 50px;
     }
 
-    .nav {
-        margin-top: 10px;
-        justify-content: center;
+    #search{
+        margin-left: 500px;
     }
 
-    .nav-buttons {
-        margin: 0 5px;
+}
+
+@media screen and (max-width: 900px)
+{
+    #hideOnMobile{
+        display: none;
+    }
+
+    #typewriter{
+        padding-left: 15%;
     }
 }
 
-@media (max-width: 576px) {
-    .main-text {
-        font-size: 1.5rem;
+@media screen and (max-width: 768px)
+{
+    .heading{
+        font-size: 40px;
     }
 
-    .nav-buttons {
-        font-size: 0.8rem;
+    #searchbar{
+        margin-top: 40px;
+        width: 75%;
+    }
+
+    #search{
+        margin-left: 560px;
     }
 }
