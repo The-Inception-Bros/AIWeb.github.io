@@ -38,7 +38,7 @@ section {
 
 .login-box {
   position: relative;
-  width: 600px;
+  width: 700px;
   height: 650px;
   background: var(--bg4);
   border: 2px solid rgba(255, 255, 255, .5);
@@ -130,10 +130,12 @@ button {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+ 
 }
 
 .register-link p a:hover {
   text-decoration: underline;
+  
 }
 
 .google {
