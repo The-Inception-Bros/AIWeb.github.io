@@ -47,7 +47,7 @@ section{
 
 .register-box{
     position: relative;
-    width: 600px;
+    width: 700px;
     height: 650px;
     background: var(--bg4);
     border: 2px solid rgba(255, 255, 255, .5);
